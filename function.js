@@ -1,3 +1,19 @@
+
+  if (e.target.classList.contains("interviewBtn")) {
+    const job = jobs.find(j => j.id === id);
+    job.status = job.status === "interview" ? "all" : "interview";
+  }
+
+  if (e.target.classList.contains("rejectBtn")) {
+    const job = jobs.find(j => j.id === id);
+    job.status = job.status === "rejected" ? "all" : "rejected";
+  }
+
+  if (e.target.classList.contains("deleteBtn")) {
+    const index = jobs.findIndex(j => j.id === id);
+    jobs.splice(index, 1);
+  }
+
   renderJobs();
 });
 
