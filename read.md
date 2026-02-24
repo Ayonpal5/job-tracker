@@ -8,8 +8,6 @@
 - Delete job functionality
 - Empty state UI
 
----
-
 ## Answers to Questions
 
 ### 1. Difference between getElementById, getElementsByClassName, querySelector / querySelectorAll?
@@ -19,8 +17,6 @@
 - querySelector: Returns the first matching CSS selector.
 - querySelectorAll: Returns a static NodeList of all matching elements.
 
----
-
 ### 2. How do you create and insert a new element into the DOM?
 
 Use document.createElement() and appendChild().
@@ -29,4 +25,5 @@ Example:
 ```javascript
 const div = document.createElement("div");
 div.innerText = "New Element";
+
 document.body.appendChild(div);
